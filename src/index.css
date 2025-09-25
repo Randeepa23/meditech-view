@@ -20,39 +20,39 @@ All colors MUST be HSL for proper theming.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
 
-    /* Medical Blue Primary - Professional & Trustworthy */
-    --primary: 210 85% 45%;
+    /* Professional Medical Blue - Enhanced Trust & Authority */
+    --primary: 212 95% 40%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 210 85% 65%;
+    --primary-glow: 212 85% 60%;
 
-    /* Clinical Secondary - Soft Blue-Gray */
-    --secondary: 215 15% 95%;
-    --secondary-foreground: 215 25% 25%;
+    /* Premium Clinical Secondary */
+    --secondary: 210 20% 92%;
+    --secondary-foreground: 210 35% 20%;
 
-    /* Lab Muted Tones */
-    --muted: 215 15% 96%;
-    --muted-foreground: 215 15% 45%;
+    /* Sophisticated Lab Tones */
+    --muted: 210 18% 94%;
+    --muted-foreground: 210 25% 40%;
 
-    /* Clinical Accent - Soft Teal */
-    --accent: 180 25% 92%;
-    --accent-foreground: 180 45% 25%;
+    /* Professional Accent - Refined Teal */
+    --accent: 185 30% 88%;
+    --accent-foreground: 185 50% 25%;
 
-    /* Alert Red for Critical Results */
-    --destructive: 0 75% 55%;
+    /* Professional Alert Red */
+    --destructive: 355 85% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Success Green for Completed Tests */
-    --success: 145 65% 42%;
+    /* Medical Success Green */
+    --success: 155 70% 35%;
     --success-foreground: 0 0% 100%;
 
-    /* Warning Amber for Pending */
-    --warning: 45 90% 55%;
-    --warning-foreground: 45 25% 15%;
+    /* Clinical Warning Amber */
+    --warning: 35 95% 50%;
+    --warning-foreground: 35 30% 10%;
 
-    /* Clinical Borders & Inputs */
-    --border: 215 15% 88%;
-    --input: 215 15% 94%;
-    --ring: 210 85% 45%;
+    /* Professional Borders & Inputs */
+    --border: 210 20% 85%;
+    --input: 210 18% 92%;
+    --ring: 212 95% 40%;
 
     --radius: 0.75rem;
 

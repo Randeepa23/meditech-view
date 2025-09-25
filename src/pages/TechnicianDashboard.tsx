@@ -82,8 +82,8 @@ export default function TechnicianDashboard() {
                   <Activity className="h-5 w-5 text-primary" />
                   <span>Recent Test Orders</span>
                 </CardTitle>
-                <Button size="sm" className="btn-clinical">
-                  <Plus className="h-4 w-4 mr-1" />
+                <Button size="sm" variant="clinical">
+                  <Plus className="h-4 w-4 mr-2" />
                   New Test
                 </Button>
               </CardHeader>
@@ -110,8 +110,8 @@ export default function TechnicianDashboard() {
                         <Badge className={getStatusColor(test.status)}>
                           {test.status.replace('-', ' ')}
                         </Badge>
-                        <Button variant="outline" size="sm">
-                          View
+                        <Button variant="outline" size="sm" className="font-medium">
+                          View Details
                         </Button>
                       </div>
                     </div>
@@ -147,8 +147,8 @@ export default function TechnicianDashboard() {
                     </div>
                   ))}
                 </div>
-                <Button variant="outline" className="w-full mt-4">
-                  <Plus className="h-4 w-4 mr-1" />
+                <Button variant="clinical" className="w-full mt-4">
+                  <Plus className="h-4 w-4 mr-2" />
                   Register New Patient
                 </Button>
               </CardContent>
@@ -163,21 +163,21 @@ export default function TechnicianDashboard() {
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <Button variant="outline" className="h-20 flex-col">
-                <TestTube className="h-6 w-6 mb-2" />
-                Process Sample
+              <Button variant="outline" className="h-24 flex-col hover:border-primary/40 hover:bg-primary/5 transition-all duration-300">
+                <TestTube className="h-7 w-7 mb-2 text-primary" />
+                <span className="font-medium">Process Sample</span>
               </Button>
-              <Button variant="outline" className="h-20 flex-col">
-                <CheckCircle className="h-6 w-6 mb-2" />
-                Enter Results
+              <Button variant="outline" className="h-24 flex-col hover:border-success/40 hover:bg-success/5 transition-all duration-300">
+                <CheckCircle className="h-7 w-7 mb-2 text-success" />
+                <span className="font-medium">Enter Results</span>
               </Button>
-              <Button variant="outline" className="h-20 flex-col">
-                <Users className="h-6 w-6 mb-2" />
-                Patient Lookup
+              <Button variant="outline" className="h-24 flex-col hover:border-primary/40 hover:bg-primary/5 transition-all duration-300">
+                <Users className="h-7 w-7 mb-2 text-primary" />
+                <span className="font-medium">Patient Lookup</span>
               </Button>
-              <Button variant="outline" className="h-20 flex-col">
-                <Calendar className="h-6 w-6 mb-2" />
-                Schedule Test
+              <Button variant="outline" className="h-24 flex-col hover:border-warning/40 hover:bg-warning/5 transition-all duration-300">
+                <Calendar className="h-7 w-7 mb-2 text-warning" />
+                <span className="font-medium">Schedule Test</span>
               </Button>
             </div>
           </CardContent>
