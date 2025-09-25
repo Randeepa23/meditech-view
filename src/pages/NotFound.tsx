@@ -1,5 +1,8 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { AlertCircle, Home } from "lucide-react";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,14 +12,31 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 underline hover:text-blue-700">
-          Return to Home
-        </a>
-      </div>
+    <div className="min-h-screen bg-gradient-clinical flex items-center justify-center p-4">
+      <Card className="clinical-card max-w-md mx-auto text-center">
+        <CardHeader>
+          <div className="mx-auto w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
+            <AlertCircle className="h-8 w-8 text-destructive" />
+          </div>
+          <CardTitle className="text-2xl">Page Not Found</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="text-muted-foreground">
+            The page you're looking for doesn't exist in the LIMS system.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            Route: <code className="bg-muted px-2 py-1 rounded text-xs">{location.pathname}</code>
+          </p>
+          <div className="pt-4">
+            <Button asChild className="btn-clinical">
+              <Link to="/">
+                <Home className="h-4 w-4 mr-2" />
+                Return to LIMS Home
+              </Link>
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
